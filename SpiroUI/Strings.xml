@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<strings>
+  <ApplicationTitle>
+    <English>Spirograph drawings</English>
+    <Russian>Рисование спирографом</Russian>
+  </ApplicationTitle>
+  <YesButton>
+    <English>Yes</English>
+    <Russian>Да</Russian>
+  </YesButton>
+  <NoButton>
+    <English>No</English>
+    <Russian>Нет</Russian>
+  </NoButton>
+  <OKButton>
+    <English>OK</English>
+    <Russian>ОК</Russian>
+  </OKButton>
+  <CancelButton>
+    <English>Cancel</English>
+    <Russian>Отмена</Russian>
+  </CancelButton>
+  <CloseButton>
+    <English>Close</English>
+    <Russian>Закрыть</Russian>
+  </CloseButton>
+  <PrepareButton>
+    <English>Prepare</English>
+    <Russian>Приготовить</Russian>
+  </PrepareButton>
+  <BackColor>
+    <English>Back color</English>
+    <Russian>Цвет фона</Russian>
+  </BackColor>
+  <CanvasSize>
+    <English>Canvas size</English>
+    <Russian>Размер холста</Russian>
+  </CanvasSize>
+  <Width>
+    <English>Width</English>
+    <Russian>Ширина</Russian>
+  </Width>
+  <Height>
+    <English>Height</English>
+    <Russian>Высота</Russian>
+  </Height>
+  <Delay>
+    <English>Delay, ms</English>
+    <Russian>Задержка, мс</Russian>
+  </Delay>
+  <StartButton>
+    <English>Start</English>
+    <Russian>Пуск</Russian>
+  </StartButton>
+  <OpenParams>
+    <English>Open parameters set</English>
+    <Russian>Открыть набор параметров</Russian>    
+  </OpenParams>
+  <SaveParams>
+    <English>Save current parameters set</English>
+    <Russian>Сщхранить текущий набор параметров</Russian>
+  </SaveParams>
+  <PrepareWindowTitle>
+    <English>Prepare spirograph</English>
+    <Russian>Подготовить спирограф</Russian>
+  </PrepareWindowTitle>
+  <FixedElement>
+    <English>Fixed element</English>
+    <Russian>Неподвижный элемент</Russian>
+  </FixedElement>
+  <MovingElement>
+    <English>Moving element</English>
+    <Russian>Подвижный элемент</Russian>
+  </MovingElement>
+  <OuterRadius>
+    <English>Outer radius</English>
+    <Russian>Внешний радиус</Russian>
+  </OuterRadius>
+  <InnerRadius>
+    <English>Inner radius</English>
+    <Russian>Внутренний радиус</Russian>
+  </InnerRadius>
+  <TouchBy>
+    <English>Touches by</English>
+    <Russian>Касание краем</Russian>
+  </TouchBy>
+  <TouchByOuter>
+    <English>Outer</English>
+    <Russian>Внешним</Russian>
+  </TouchByOuter>
+  <TouchByInner>
+    <English>Inner</English>
+    <Russian>Внутренним</Russian>
+  </TouchByInner>
+  <PensList>
+    <English>List of pens</English>
+    <Russian>Список перьев</Russian>
+  </PensList>
+  <StartAngle>
+    <English>Start angle</English>
+    <Russian>Начальный угол</Russian>
+  </StartAngle>
+  <CurveWillClose>
+    <English>Curve will close after</English>
+    <Russian>Кривая замкнётся через</Russian>
+  </CurveWillClose>
+  <Loops>
+    <English>loops</English>
+    <Russian>кругов</Russian>
+  </Loops>
+  <NewQuillWindowTitle>
+    <English>Define new quill</English>
+    <Russian>Создание нового пера</Russian>
+  </NewQuillWindowTitle>
+  <ErrorTitle>
+    <English>Error</English>
+    <Russian>Ошибка!</Russian>
+  </ErrorTitle>
+  <ErrorWrongNumber>
+    <English>You entered wrong number for </English>
+    <Russian>Вы ввели неправильное число для параметра </Russian>
+  </ErrorWrongNumber>
+  <ErrorNotPrepared>
+    <English>Spirograph isn't prepared yet\nPress Prepare button</English>
+    <Russian>Спирограф не готов\nНажмите кнопку Приготовить</Russian>
+  </ErrorNotPrepared>
+</strings>
