@@ -124,4 +124,12 @@
     <English>Spirograph isn't prepared yet\nPress Prepare button</English>
     <Russian>Спирограф не готов\nНажмите кнопку Приготовить</Russian>
   </ErrorNotPrepared>
+<ErrorReadXML>
+  <English>Error occured while reading XML</English>
+  <Russian>Ошибка чтения XML файла</Russian>
+</ErrorReadXML>
+<ErrorBadQuillDescriptionInXML>
+  <English>Incorrect desciption of quill in XML file</English>
+  <Russian>Неправильно описание пера в файле XML</Russian>
+</ErrorBadQuillDescriptionInXML>
 </strings>

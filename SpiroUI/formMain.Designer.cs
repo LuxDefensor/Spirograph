@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btnSaveParams = new System.Windows.Forms.ToolStripButton();
+            this.btnOpenParams = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.btnPrepare = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
@@ -41,12 +43,13 @@
             this.txtWidth = new System.Windows.Forms.TextBox();
             this.txtHeight = new System.Windows.Forms.TextBox();
             this.lblHeight = new System.Windows.Forms.Label();
-            this.btnSaveParams = new System.Windows.Forms.ToolStripButton();
             this.picBackColor = new System.Windows.Forms.PictureBox();
             this.picCanvas = new System.Windows.Forms.PictureBox();
-            this.btnOpenParams = new System.Windows.Forms.ToolStripButton();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.toolStrip1.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudDelay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBackColor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).BeginInit();
@@ -64,8 +67,28 @@
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // btnSaveParams
+            // 
+            this.btnSaveParams.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnSaveParams.Image = global::Spirograph.Properties.Resources.saveHS;
+            this.btnSaveParams.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSaveParams.Name = "btnSaveParams";
+            this.btnSaveParams.Size = new System.Drawing.Size(23, 22);
+            this.btnSaveParams.Text = "toolStripButton1";
+            // 
+            // btnOpenParams
+            // 
+            this.btnOpenParams.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnOpenParams.Image = global::Spirograph.Properties.Resources.OpenSelectedItemHS;
+            this.btnOpenParams.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnOpenParams.Name = "btnOpenParams";
+            this.btnOpenParams.Size = new System.Drawing.Size(23, 22);
+            this.btnOpenParams.Text = "toolStripButton2";
+            // 
             // statusStrip1
             // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lblStatus});
             this.statusStrip1.Location = new System.Drawing.Point(0, 575);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(727, 22);
@@ -176,15 +199,6 @@
             this.lblHeight.TabIndex = 12;
             this.lblHeight.Text = "Высота";
             // 
-            // btnSaveParams
-            // 
-            this.btnSaveParams.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnSaveParams.Image = global::Spirograph.Properties.Resources.saveHS;
-            this.btnSaveParams.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSaveParams.Name = "btnSaveParams";
-            this.btnSaveParams.Size = new System.Drawing.Size(23, 22);
-            this.btnSaveParams.Text = "toolStripButton1";
-            // 
             // picBackColor
             // 
             this.picBackColor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -206,14 +220,14 @@
             this.picCanvas.TabIndex = 2;
             this.picCanvas.TabStop = false;
             // 
-            // btnOpenParams
+            // lblStatus
             // 
-            this.btnOpenParams.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnOpenParams.Image = global::Spirograph.Properties.Resources.OpenSelectedItemHS;
-            this.btnOpenParams.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnOpenParams.Name = "btnOpenParams";
-            this.btnOpenParams.Size = new System.Drawing.Size(23, 22);
-            this.btnOpenParams.Text = "toolStripButton2";
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(0, 17);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // formMain
             // 
@@ -238,6 +252,8 @@
             this.Text = "Form1";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudDelay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBackColor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).EndInit();
@@ -266,6 +282,8 @@
         private System.Windows.Forms.ToolStripButton btnSaveParams;
         private System.Windows.Forms.ToolStripButton btnOpenParams;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.ToolStripStatusLabel lblStatus;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 

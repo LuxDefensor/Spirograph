@@ -188,12 +188,13 @@ namespace Spirograph
 
         public void Draw()
         {
-            _canvas.Clear(_backColor);
             _bmp = new Bitmap((int)_bounds.Width, (int)_bounds.Height);
             Graphics buffer = Graphics.FromImage(Bmp);
+            _canvas.Clear(_backColor);
+            buffer.Clear(_backColor);
             _currentAngle = _startAngle;
             InitializeQuills();
-            while (_currentAngle <= (_loops * 360 + _startAngle))
+            while (_currentAngle <= (_loops * 360))
             {
                 FillQuillsLists();
                 for (int i = 0; i < _currentQuills.Count; i++)
@@ -220,7 +221,7 @@ namespace Spirograph
         private void InitializeQuills()
         {
             PointF result;
-            _currentAngle = _startAngle;
+            _currentAngle = 0;
             _currentQuills.Clear();
             foreach (Quill quill in _movingRing.Quills)
             {
@@ -242,12 +243,14 @@ namespace Spirograph
                 if (_movingRing.Touch == Edges.Outer)
                 {
                     distance = _fixedRing.OuterRadius + _movingRing.OuterRadius;
-                    theta = alpha * _fixedRing.OuterRadius / _movingRing.OuterRadius + Utils.Degrees2Radians(quill.AngularPosition);
+                    theta = alpha * _fixedRing.OuterRadius / _movingRing.OuterRadius
+                         + Utils.Degrees2Radians(quill.AngularPosition + _startAngle);
                 }
                 else
                 {
                     distance = _fixedRing.OuterRadius - _movingRing.InnerRadius;
-                    theta = alpha * _fixedRing.OuterRadius/ _movingRing.InnerRadius+ Utils.Degrees2Radians(quill.AngularPosition);
+                    theta = alpha * _fixedRing.OuterRadius / _movingRing.InnerRadius
+                        + Utils.Degrees2Radians(quill.AngularPosition + _startAngle);
                 }
             }
             else
@@ -255,12 +258,14 @@ namespace Spirograph
                 if (_movingRing.Touch == Edges.Outer)
                 {
                     distance = _fixedRing.InnerRadius - _movingRing.OuterRadius;
-                    theta = alpha * _fixedRing.InnerRadius / _movingRing.OuterRadius + Utils.Degrees2Radians(quill.AngularPosition);
+                    theta = alpha * _fixedRing.InnerRadius / _movingRing.OuterRadius
+                        + Utils.Degrees2Radians(quill.AngularPosition + _startAngle);
                 }
                 else
                 {
                     distance = _fixedRing.InnerRadius - _movingRing.InnerRadius;
-                    theta = alpha * _fixedRing.InnerRadius / _movingRing.InnerRadius + Utils.Degrees2Radians(quill.AngularPosition);
+                    theta = alpha * _fixedRing.InnerRadius / _movingRing.InnerRadius
+                        + Utils.Degrees2Radians(quill.AngularPosition + _startAngle);
                 }
             }
             B.X = (float)(distance * Math.Cos(alpha));
